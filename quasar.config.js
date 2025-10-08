@@ -55,7 +55,7 @@ export default defineConfig((/* ctx */) => {
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
-
+      publicPath: '/6704101416-Achiraya-Boonchuai/',
       vitePlugins: [
         [
           'vite-plugin-checker',
