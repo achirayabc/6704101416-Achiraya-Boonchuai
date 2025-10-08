@@ -64,11 +64,11 @@ export default defineConfig((/* ctx */) => {
               lintCommand: 'eslint -c ./eslint.config.js "./src*/**/*.{js,mjs,cjs,vue}"',
               useFlatConfig: true,
             },
-            // server flag ต้องอยู่ใน object เดียว
-            server: false,
+            server: false, // ย้ายเข้า object เดียวกัน
           }
         ]
       ],
+      
       
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
