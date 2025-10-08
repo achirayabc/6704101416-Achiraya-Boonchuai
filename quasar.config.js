@@ -55,7 +55,7 @@ export default defineConfig((/* ctx */) => {
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
-      publicPath: '/6704101416-Achiraya-Boonchuai/',
+      
       vitePlugins: [
         [
           'vite-plugin-checker',
@@ -64,11 +64,12 @@ export default defineConfig((/* ctx */) => {
               lintCommand: 'eslint -c ./eslint.config.js "./src*/**/*.{js,mjs,cjs,vue}"',
               useFlatConfig: true,
             },
-          },
-          overlay: { initialIsOpen: false },
-        ],
+            // server flag ต้องอยู่ใน object เดียว
+            server: false,
+          }
+        ]
       ],
-    },
+      
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
     devServer: {
