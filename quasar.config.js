@@ -65,7 +65,7 @@ export default defineConfig((/* ctx */) => {
               useFlatConfig: true,
             },
           },
-          { server: false },
+          overlay: { initialIsOpen: false },
         ],
       ],
     },
